@@ -19,8 +19,8 @@
 	<xs:complexType name="abilities_tables">
 		<xs:attribute name="Agent_x0020_Ability" type="xs:string" use="required" />
 		<xs:attribute name="Associated_Attribute" msprop:Optional="true" type="xs:string" />
-		<xs:attribute name="Type" type="xs:string" use="required" />
-		<xs:attribute name="Unknown" type="xs:boolean" use="required" />
+		<xs:attribute name="Cursor" type="xs:string" use="required" />
+		<xs:attribute name="Is_active" type="xs:boolean" use="required" />
 	</xs:complexType>
 	<xs:complexType name="achievements_tables">
 		<xs:attribute name="Key" type="xs:string" use="required" />
@@ -664,13 +664,13 @@
 	</xs:complexType>
 	<xs:complexType name="factions_tables">
 		<xs:attribute name="Faction_ID" type="xs:string" use="required" />
-		<xs:attribute name="ID2" type="xs:int" use="required" />
+		<xs:attribute name="Index" type="xs:int" use="required" />
 		<xs:attribute name="Subculture" type="xs:string" use="required" />
 		<xs:attribute name="Type" type="xs:string" use="required" />
-		<xs:attribute name="Nation" type="xs:string" use="required" />
-		<xs:attribute name="Nationality" type="xs:string" use="required" />
-		<xs:attribute name="Names_DB" type="xs:string" use="required" />
-		<xs:attribute name="sounds_id" type="xs:string" use="required" />
+		<xs:attribute name="Screen_name" type="xs:string" use="required" />
+		<xs:attribute name="Screen_adjective" type="xs:string" use="required" />
+		<xs:attribute name="Name_group" type="xs:string" use="required" />
+		<xs:attribute name="Skin" type="xs:string" use="required" />
 		<xs:attribute name="unknown3" msprop:Optional="true" msprop:VersionStart="2" type="xs:string" />
 		<xs:attribute name="Rebels" type="xs:boolean" use="required" />
 		<xs:attribute name="Early_Availability" type="xs:boolean" use="required" />
@@ -703,7 +703,7 @@
 		<xs:attribute name="G" type="xs:float" use="required" />
 		<xs:attribute name="B" type="xs:float" use="required" />
 		<xs:attribute name="ID3" msprop:Optional="true" type="xs:string" />
-		<xs:attribute name="Abreviation" type="xs:string" use="required" />
+		<xs:attribute name="Audio_faction" type="xs:string" use="required" />
 		<xs:attribute name="unknown1" type="xs:boolean" use="required" />
 		<xs:attribute name="unknown2" type="xs:boolean" use="required" />
 		<xs:attribute name="Names_1" type="xs:string" use="required" />
